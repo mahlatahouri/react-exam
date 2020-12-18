@@ -1,0 +1,70 @@
+#appInfo {
+  margin-top: 2rem;
+}
+#appInfo div h3 {
+  font-size: 19px;
+  color: #30475e;
+}
+#appInfo div h3 i {
+  padding-left: 8px;
+  font-size: 20px;
+  vertical-align: -1px;
+}
+.item-info {
+  padding: 5.5px 17px;
+  box-shadow: 0 0 10px 0 #d7d7d7;
+  display: flex;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.85rem;
+  position: relative;
+}
+.item-info:before {
+  position: absolute;
+  content: "";
+  border-radius: 8px;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid #eee;
+  top: 100;
+  right: 0;
+  z-index: -1;
+  transition: 0.5s all ease-in-out;
+}
+.item-info:hover:before {
+  width: 100%;
+}
+.item-info:after {
+  position: absolute;
+  content: "";
+  top: 0%;
+  right: 0;
+  background-color: #32aa72;
+  border-radius: 0 8px 8px 0;
+  height: 100%;
+  width: 4px;
+}
+.item-info:nth-child(2n):after {
+  background-color: #f04052;
+}
+.item-info img {
+  width: 35px;
+  height: 35px;
+  vertical-align: -12px;
+}
+.item-info div > span {
+  font-size: 17px;
+  padding-right: 12px;
+}
+.item-info .price {
+  padding: 0 0.8rem;
+  border-right: 2px solid rgb(80, 137, 245);
+}
+.item-info .price p {
+  font-size: 15px;
+}
+.item-info .price>p:first-child {
+  margin-bottom: 6px;
+}

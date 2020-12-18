@@ -1,12 +1,14 @@
-.lastupdate{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
-    padding:0 2rem .5rem;
-    font-size: 16px;
+.lastupdate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #8e44ad;
+  border-radius: 50rem;
+  color: #fff;  
+  padding:.75rem 2rem;
+  font-size: 16px;
 }
-.lastupdate p:last-child span:nth-child(2){
-    padding:0 .5rem;
+.lastupdate p:last-child span:nth-child(2) {
+  padding: 0 0.5rem;
 }
