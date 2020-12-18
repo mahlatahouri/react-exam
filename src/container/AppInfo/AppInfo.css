@@ -1,5 +1,11 @@
 #appInfo {
-  margin-top: 2rem;
+  height: 65vh;
+  overflow-y: scroll;
+  padding:1rem ;
+  margin-top: 1.5rem;
+}
+#appInfo>div{
+  margin-bottom: 2rem;
 }
 #appInfo div h3 {
   font-size: 19px;

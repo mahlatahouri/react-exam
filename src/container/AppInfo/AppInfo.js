@@ -9,10 +9,17 @@ const AppInfo = (props) => {
             <div>
                 <h3>
                     <i className="fa fa-money-bill"></i>
-                    دلار و ارز 
+                    دلار و ارز
                 </h3>
                 <CurencyList />
-            </div>gg
+            </div>
+            <div>
+                <h3>
+                    <i className="fa fa-coins"></i>
+                    طلا و سکه
+                </h3>
+                <GoldList />
+            </div>
         </section>
     )
 }
