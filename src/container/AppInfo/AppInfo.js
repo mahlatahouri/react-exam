@@ -7,17 +7,11 @@ const AppInfo = (props) => {
     return (
         <section id="appInfo">
             <div>
-                <h3>
-                    <i className="fa fa-money-bill"></i>
-                    دلار و ارز
-                </h3>
+                <h3><i className="fa fa-money-bill"></i>دلار و ارز</h3>
                 <CurencyList />
             </div>
             <div>
-                <h3>
-                    <i className="fa fa-coins"></i>
-                    طلا و سکه
-                </h3>
+                <h3><i className="fa fa-coins"></i>طلا و سکه</h3>
                 <GoldList />
             </div>
         </section>

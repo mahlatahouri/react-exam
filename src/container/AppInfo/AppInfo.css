@@ -1,7 +1,20 @@
+#appInfo{
+  scrollbar-width: thin;
+  scrollbar-color:#343a40 transparent;
+}
+#appInfo::-webkit-scrollbar{
+  background: transparent;
+  width: 4px;
+}
+#appInfo::-webkit-scrollbar-thumb{
+  border-radius: 50rem;
+  background: #343a40;   
+}
 #appInfo {
-  height: 65vh;
+  height: 60vh;
   overflow-y: scroll;
-  padding:1rem ;
+  overflow-X: hidden;
+  padding:1rem;
   margin-top: 1.5rem;
 }
 #appInfo>div{

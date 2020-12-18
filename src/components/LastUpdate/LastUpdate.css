@@ -5,10 +5,27 @@
   padding-bottom: 1rem;
   background-color: #8e44ad;
   border-radius: 50rem;
-  color: #fff;  
-  padding:.75rem 2rem;
+  color: #fff;
+  padding: 0.75rem 2rem;
   font-size: 16px;
 }
 .lastupdate p:last-child span:nth-child(2) {
   padding: 0 0.5rem;
+}
+.lastupdate button {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255, 63, 52,1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  outline: none;
 }
