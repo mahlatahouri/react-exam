@@ -8,7 +8,7 @@ const Title = (props) => {
                 <span className="anim-span"></span>
                 <h2>قیمت زنده دلار و ارز</h2>
             </div>
-            <button title={"Update"} className="refresh-btn">⟳</button>
+            <button onClick={props.updateData} title={"Update"} className="refresh-btn">⟳</button>
         </section >
 
     )
