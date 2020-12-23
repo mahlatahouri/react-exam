@@ -56,12 +56,12 @@ const CurencyList = (props) => {
         toPersianNumber: (price) => Number(price).toLocaleString('fa-ir')
     }
     // slice custom curency match on info object
-    let data = props.data.filter(item => Object.keys(info).indexOf(item.slug) != -1)
+    let data = props.data.filter(item => Object.keys(info).indexOf(item.slug) !== -1)
     let result = data.map(item => {
         return (<Curency
             key={item.slug}
             title={info[item.slug].title}
-            image={info[item.slug].image}
+            img={info[item.slug].image}
             sell={info.toPersianNumber(item.p)}
             buy={info.toPersianNumber(item.p)}  
         />)

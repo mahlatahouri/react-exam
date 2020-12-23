@@ -5,7 +5,7 @@ const Curency = (props) => {
     return (
         <li className="item-info">
             <div>
-                <img src={props.image} />
+                <img src={props.img} alt={props.title}/>
                 <span>{props.title}</span>
             </div>
             <div className="price">
