@@ -20,13 +20,17 @@ class Main extends React.Component {
     }
     render() {
         return (
-            this.state.curency ?
-                <Wrapper>
-                    <Title />
-                    <LastUpdate />
-                    <AppInfo data={this.state.curency} />
-                </Wrapper>
-                : null
+            <Wrapper>
+                <Title />
+                {
+                    this.state.curency ?
+                        <Wrapper>
+                            <LastUpdate />
+                            <AppInfo data={this.state.curency} />
+                        </Wrapper>
+                        : <p className="loading"><i className="fas fa-circle-notch fa-spin"></i></p>
+                }
+            </Wrapper >
         )
     }
 }

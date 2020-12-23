@@ -87,3 +87,9 @@
 .item-info .price>p:first-child {
   margin-bottom: 6px;
 }
+.loading{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 4rem;
+  color: #333;
+}
