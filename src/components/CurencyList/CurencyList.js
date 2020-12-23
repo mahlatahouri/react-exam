@@ -63,7 +63,7 @@ const CurencyList = (props) => {
             title={info[item.slug].title}
             image={info[item.slug].image}
             sell={info.toPersianNumber(item.p)}
-            buy={info.toPersianNumber(item.p)}
+            buy={info.toPersianNumber(item.p)}  
         />)
     })
     return (

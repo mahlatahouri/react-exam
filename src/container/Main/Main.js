@@ -16,20 +16,19 @@ class Main extends React.Component {
             .then(response => {
                 const lastupdate = response.sana.data[0].updated_at;
                 const curency = response.sana.data;
-                this.setState({ lastTimeUpdate: LastUpdate, curency: curency })
+                this.setState({ lastTimeUpdate: lastupdate, curency: curency })
             })
     }
     componentDidMount() {
         this.fetchData()
     }
     render() {
-        console.log('rendered')
         return (
             <Wrapper>
                 <Title updateData={this.fetchData} />
                 {this.state.curency ?
                     <Wrapper>
-                        <LastUpdate />
+                        <LastUpdate updateTime={this.state.lastTimeUpdate}/>
                         <AppInfo data={this.state.curency} />
                     </Wrapper>
                     : <p className="loading">
